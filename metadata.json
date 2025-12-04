@@ -1,0 +1,5 @@
+{
+  "name": "SparkleFlow Laundry Manager",
+  "description": "A modern management dashboard for laundry shops to track orders, payments, and generate AI-powered customer notifications.",
+  "requestFramePermissions": []
+}
