@@ -24,7 +24,7 @@ import { generateCustomerNotification } from './services/geminiService';
 import { GoogleGenAI } from "@google/genai";
 
 // Initialize for tone rewriting in drafts
-const ai = new GoogleGenAI({ apiKey: process.env.NEXT_PUBLIC_API_KEY });
+const ai = new GoogleGenAI({ apiKey: import.meta.env.VITE_API_KEY });
 
 const DEFAULT_TEMPLATES: SMSTemplate[] = [
     { id: '1', name: 'Order Ready', category: 'Ready', content: 'Hi {customerName}, great news! Your order #{orderId} is ready for pickup at {shopName}. Total: ${totalAmount}.' },
